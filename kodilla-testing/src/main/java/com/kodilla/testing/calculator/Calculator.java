@@ -1,11 +1,8 @@
 package com.kodilla.testing.calculator;
 
 public class Calculator {
-    int a,b;
-    public Calculator (){
 
-        this.a = a;
-        this.b = b;
+    public Calculator (){
 
     }
 
