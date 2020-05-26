@@ -45,12 +45,17 @@ public class CollectionTestSuite {
         }
 
         ArrayList<Integer> givenList = new ArrayList<>();
-        int number = 0;
+        givenList.add(0);
+        givenList.add(2);
+        givenList.add(4);
+        givenList.add(6);
+        givenList.add(8);
+        givenList.add(10);
+        givenList.add(12);
+        givenList.add(14);
+        givenList.add(16);
+        givenList.add(18);
 
-        for(int i = 0; i < 10; i++){
-            givenList.add(i,number);
-            number = number + 2;
-        }
 
         //When
         ArrayList<Integer> result = theListTester.exterminate(theList);
