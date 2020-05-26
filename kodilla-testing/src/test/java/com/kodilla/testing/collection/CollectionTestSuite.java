@@ -38,18 +38,25 @@ public class CollectionTestSuite {
     public void testOddNumbersExterminatorNormalList(){
         //Given
         ArrayList<Integer> theList = new ArrayList<>();
+        OddNumbersExterminator theListTester = new OddNumbersExterminator();
 
-        for(int x = 0; x < 50 ;x++ ){
+        for(int x = 0; x < 20 ;x++ ){
             theList.add(x);
         }
 
-        OddNumbersExterminator theListTester = new OddNumbersExterminator();
-        //When
+        ArrayList<Integer> givenList = new ArrayList<>();
+        int number = 0;
 
-        int result = theListTester.exterminate(theList).get(1);
+        for(int i = 0; i < 10; i++){
+            givenList.add(i,number);
+            number = number + 2;
+        }
+
+        //When
+        ArrayList<Integer> result = theListTester.exterminate(theList);
         System.out.println("Testing: if contains odd and even numbers");
         //Then
-        Assert.assertEquals(2, result);
+        Assert.assertEquals(givenList, result);
     }
 
 }

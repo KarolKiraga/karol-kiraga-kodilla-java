@@ -1,7 +1,5 @@
 package com.kodilla.testing.forum;
 
-import java.util.Objects;
-
 public class ForumPost {
     String postBody;
     String author;
@@ -18,6 +16,10 @@ public class ForumPost {
     public String getAuthor() {
         return author;
     }
+
+
+
+
 
     @Override
     public boolean equals(Object o) {
